@@ -1,0 +1,73 @@
+/* Card.css */
+
+/* Previous styles remain unchanged */
+
+.new-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 370px;
+  height: 554px;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.new-card:hover {
+  transform: translateY(-4px);
+}
+
+.new-card-image {
+  width: 100%;
+  height: 258px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.new-card-content {
+  height: 420px; /* Set a fixed height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start; /* Align content at the start */
+}
+
+.new-card-heading {
+  color: #0e2368;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.new-card-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  height: 150px;
+}
+
+.new-card-button {
+  margin-top: auto; /* Align button to the bottom of the container */
+  background-color: #ffffff;
+  color: #424961;
+  padding: 12px;
+  border: 1px solid #424961;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.new-card-button:hover {
+  background-color: #bf1e38;
+  color: #ffffff;
+}

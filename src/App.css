@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+.explorenowbtn {
+  background-color: #e23744;
+  width: 10rem;
+  height: 3rem;
+  padding: 14px 34px 14px 34px; /* Corrected padding values */
+  border-radius: 34px;
+  gap: 7px;
+  color: white;
+}
+
+/* Your other styles here */
+
+.wrapper {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
