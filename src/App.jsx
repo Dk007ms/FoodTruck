@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Card from "./components/Card"; // Assuming you have a Card component
-import logo from "./assets/logo.png";
-import section1image from "./assets/section1main.jpeg";
-import landingimage from "./assets/landingimage.jpeg";
-import GrilledTomatoes from "./assets/GrilledTomatoes.jpeg";
-import TravelSnacks from "./assets/TravelSnacks.jpeg";
-import GrillCorn from "./assets/GrillCorn.jpeg";
-import CrunchWrap from "./assets/CrunchWrap.jpeg";
-import PostWorkout from "./assets/PostWorkout.jpeg";
-import BrocolliSoup from "./assets/BrocolliSoup.jpeg";
-import redcutout from "./assets/vector.png";
+import logo from "/logo.png";
+import section1image from "/section1main.jpeg";
+import landingimage from "/landingimage.jpeg";
+import GrilledTomatoes from "/GrilledTomatoes.jpeg";
+import TravelSnacks from "/TravelSnacks.jpeg";
+import GrillCorn from "/GrillCorn.jpeg";
+import CrunchWrap from "/CrunchWrap.jpeg";
+import PostWorkout from "/PostWorkout.jpeg";
+import BrocolliSoup from "/BrocolliSoup.jpeg";
+import vector from "/vector.png";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -85,7 +85,7 @@ export default function App() {
         <div className="mainimage absolute top-0 right-0 w-full md:w-1/2">
           <img
             className="landing sm:w-[752px] sm:h-[839px] w-[375px] h-[426px] absolute top-0 z-10 object-cover"
-            src={redcutout}
+            src={vector}
             alt="Vector Image"
           />
           <img
