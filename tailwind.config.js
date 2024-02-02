@@ -1,13 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        source: ["Source Sans 3", "sans-serif"],
+      },
+      fontWeight: {
+        regular: 400,
+        bold: 700,
+      },
       screens: {
-        wide: { raw: "((min-height:1440px) and(max-height:1536px))" },
+        "min-xl": { raw: "(min-width: 1400px) and (max-width: 1536px)" },
       },
     },
   },
-
   plugins: [],
 };
