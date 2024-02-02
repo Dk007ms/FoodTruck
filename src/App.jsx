@@ -9,7 +9,7 @@ import GrillCorn from "./assets/GrillCorn.jpeg";
 import CrunchWrap from "./assets/CrunchWrap.jpeg";
 import PostWorkout from "./assets/PostWorkout.jpeg";
 import BrocolliSoup from "./assets/BrocolliSoup.jpeg";
-import vector from "./assets/vector.png";
+import Vector from "./assets/vector.png";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -85,7 +85,7 @@ export default function App() {
         <div className="mainimage absolute top-0 right-0 w-full md:w-1/2">
           <img
             className="landing sm:w-[752px] sm:h-[839px] w-[375px] h-[426px] absolute top-0 z-10 object-cover"
-            src={vector}
+            src={Vector}
             alt="Vector Image"
           />
           <img
