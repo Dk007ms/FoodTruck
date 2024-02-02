@@ -77,7 +77,7 @@ export default function App() {
   };
 
   return (
-    <div className="wrapper relative overflow-y-auto overflow-x-hidden h-[2735px] lg:h-[2585px] w-screen">
+    <div className="wrapper relative overflow-y-auto mobile:h-[3965px] mobilexs:h-[4082px] overflow-x-hidden h-[2735px] lg:h-[2585px] w-screen">
       <header className="relative w-full h-screen sm:mb-24 mx-auto flex sm:flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 xl:px-32">
         <img
           className="logo w-24 h-20 md:w-32 md:h-24 absolute top-1 hidden sm:inline-block"
