@@ -53,7 +53,7 @@ const Footer = () => (
           <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4 hidden sm:block">
             Social Links
           </h3>
-          <p className="text-md sm:text-right text-[#444957] sm:hidden">
+          <p className="text-md sm:text-right text-[#444957] sm:hidden mobilexs:text-center">
             &copy; {new Date().getFullYear()} Your Company. All rights reserved.
           </p>
           <div className="flex space-x-2 sm:space-x-4 text-[#0E2368] sm:gap-0 gap-2">

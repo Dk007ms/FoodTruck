@@ -11,7 +11,9 @@ module.exports = {
         bold: 700,
       },
       screens: {
-        "min-xl": { raw: "(min-width: 1400px) and (max-width: 1536px)" },
+        mobile: { raw: "(max-width: 426px)" },
+        mobilesm: { raw: "(max-width: 376px)" },
+        mobilexs: { raw: "(max-width: 321px)" },
       },
     },
   },

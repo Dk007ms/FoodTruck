@@ -12,6 +12,8 @@ import BrocolliSoup from "/BrocolliSoup.jpeg";
 import vector from "/vector.png";
 import Footer from "./components/Footer";
 import "./App.css";
+import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious } from "react-icons/gr";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,7 +37,7 @@ export default function App() {
       id: 3,
       imageUrl: PostWorkout,
       heading: "Post-workout Recipes",
-      info: "Fuel your body after workouts with nutritious recipes. From protein-packed meals to refreshing smoothies, our post-workout collection supports your fitness journey.",
+      info: "Fuel your body after workouts with nutritious recipes. From protein-packed meals to refreshing smoothies, our post-workout collection supports your fitness.",
     },
     {
       id: 4,
@@ -84,12 +86,12 @@ export default function App() {
         />
         <div className="mainimage absolute top-0 right-0 w-full md:w-1/2">
           <img
-            className="landing sm:w-[752px] sm:h-[839px] w-[375px] h-[426px] absolute top-0 z-10 object-cover"
+            className="landing sm:w-[752px] sm:h-[839px] mobilesm:w-[375px] mobilesm:h-[426px] mobile:w-[426px] mobile:h-[482px] absolute -top-1 z-10 object-cover"
             src={vector}
             alt="Vector Image"
           />
           <img
-            className="landingimage absolute sm:h-[804px] sm:w-[735px] w-[378.21px] h-[413.72px] object-cover z-100  rounded-bl-[198.9px] "
+            className="landingimage absolute sm:h-[804px] sm:w-[735px] mobilesm:w-[378.21px] mobilesm:h-[413.72px] mobile:w-[438.21px] mobile:h-[448.21px] z-100 top-0  rounded-bl-[198.9px] object-cover "
             src={landingimage}
           />
         </div>
@@ -144,7 +146,7 @@ export default function App() {
           </h2>
         </div>
         <div className="container mx-auto flex flex-col md:flex-row justify-around gap-6 md:gap-8 lg:gap-12 relative">
-          {visibleArticles.map((article, index) => (
+          {visibleArticles.map((article) => (
             <Card
               key={article.id}
               imageUrl={article.imageUrl}
@@ -152,21 +154,25 @@ export default function App() {
               info={article.info}
             />
           ))}
-          <div className="slider-controls absolute sm:top-[39rem] top-[109rem]  sm:left-auto left-32 transform -translate-y-1/2 flex items-center space-x-4">
+          <div className="slider-controls absolute sm:top-[39rem] top-[109rem] mobile:top-[108rem] mobilesm:top-[110rem] mobilexs:top-[113rem] sm:left-auto mobilesm:left-32 mobile:left-36  mobilexs:left-24 transform -translate-y-1/2 flex items-center space-x-4">
             <button
-              className="text-white text-xl bg-gray-700 p-2 rounded-full"
+              className={`border-2 text-lg text-[#424961] p-1 rounded-md ${
+                currentPage === 1 ? "opacity-50" : "opacity-100"
+              }`}
               onClick={prevSlide}
               disabled={currentPage === 1}
             >
-              {"<"}
+              <GrFormPrevious className="text-2xl" />
             </button>
             <span className="text-gray-700 text-lg">{`${currentPage}/${lastPage}`}</span>
             <button
-              className="text-white text-xl bg-gray-700 p-2 rounded-full"
+              className={`border-2 text-lg text-[#424961] p-1 rounded-md ${
+                currentPage === lastPage ? "opacity-50" : "opacity-100"
+              }`}
               onClick={nextSlide}
               disabled={currentPage === lastPage}
             >
-              {">"}
+              <GrFormNext className="text-2xl" />
             </button>
           </div>
         </div>

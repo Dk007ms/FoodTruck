@@ -27,21 +27,8 @@
   }
 }
 
-@media (max-width: 375px) {
-  .mainimage {
-    width: 375px;
-    height: 426px;
-  }
-
-  .landing {
-    width: 100%; /* Ensure the image takes full width */
-    height: 100%; /* Ensure the image takes full height */
-    border-radius: 27px;
-  }
-}
-
 .aboutUS {
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 426px) {
     display: flex;
     justify-content: center;
     align-items: center;
