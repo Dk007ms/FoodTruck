@@ -109,7 +109,7 @@ export default function App() {
           </button>
         </div>
 
-        <button className="getInTouchBtn md:w-28 md:h-10 lg:w-36 lg:h-12 w-24  h-[31px] text-sm border-white border-2 absolute z-10 sm:top-8 top-4 md:right-4 lg:right-6 sm:right-12 bg-transparent text-white sm:py-2 sm:px-4 rounded-full cursor-pointer hover:bg-white hover:text-black  transition duration-300 ease-in-out">
+        <button className="getInTouchBtn md:w-28 md:h-10 lg:w-36 lg:h-12 w-24  h-[31px] text-sm border-white border-2 absolute z-10 sm:top-8 top-4 mobile:right-4 md:right-4 lg:right-6 xl:right-12 bg-transparent text-white sm:py-2 sm:px-4 rounded-full cursor-pointer hover:bg-white hover:text-black  transition duration-300 ease-in-out">
           Get in Touch
         </button>
       </header>
