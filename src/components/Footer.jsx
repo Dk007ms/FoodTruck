@@ -3,15 +3,15 @@ import logo from "/logo.png";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="bg-[#F8F8F8] text-[#0E2368] py-8 sm:py-12 relative top-[28rem]">
-    <div className="container mx-auto flex flex-wrap gap-8 sm:gap-64 items-center">
+  <footer className="bg-[#F8F8F8] text-[#0E2368] py-8 sm:py-12 relative xl:top-[28rem] mobile:top-[28rem] lg:top-96 md:top-72">
+    <div className="container mx-auto flex flex-wrap gap-8 xl:gap-64 lg:gap-44 items-center">
       {/* Logo Column */}
       <div className="flex items-center">
         <img className="w-32 sm:w-40" src={logo} alt="Footer Logo" />
       </div>
 
       {/* Contact Us, More, and Social Links Column */}
-      <div className="flex mt-6 md:mt-0 sm:space-x-4 md:space-x-12 sm:gap-24 gap-12 px-6 sm:flex-row flex-col">
+      <div className="flex mt-6 lg:mt-0 sm:space-x-4 lg:space-x-12 xl:gap-24 gap-12 lg:gap-6 px-6 sm:flex-row flex-col">
         {/* Contact Us Column */}
         <div>
           <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">
@@ -66,8 +66,8 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="container text-center mt-4 sm:mt-8 sm:block hidden">
-      <p className="text-md sm:text-right text-[#444957]">
+    <div className="container text-center mt-4 sm:mt-8 sm:flex hidden lg: mx-auto justify-end md:px-6">
+      <p className="text-md  text-[#444957] w-max  relative">
         &copy; {new Date().getFullYear()} Your Company. All rights reserved.
       </p>
     </div>

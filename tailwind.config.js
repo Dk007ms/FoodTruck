@@ -14,6 +14,7 @@ module.exports = {
         mobile: { raw: "(max-width: 426px)" },
         mobilesm: { raw: "(max-width: 376px)" },
         mobilexs: { raw: "(max-width: 321px)" },
+        pc: { raw: "(min-width: 1440px)" },
       },
     },
   },

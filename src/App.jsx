@@ -77,30 +77,30 @@ export default function App() {
   };
 
   return (
-    <div className="wrapper relative overflow-y-auto mobile:h-[3965px] mobilexs:h-[4082px] overflow-x-hidden h-[2735px] lg:h-[2585px] w-screen">
-      <header className="relative w-full h-screen sm:mb-24 mx-auto flex sm:flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 xl:px-32">
+    <div className="wrapper relative overflow-y-auto  mobile:h-[3965px] mobilexs:h-[4082px] overflow-x-hidden h-[2735px] md:h-[3395px] lg:h-[2590px] pc:h-[2630px] w-screen">
+      <header className="relative w-full h-screen sm:mb-24 mx-auto flex md:flex-row lg:flex-row items-center px-6  xl:px-32">
         <img
           className="logo w-24 h-20 md:w-32 md:h-24 absolute top-1 hidden sm:inline-block"
           src={logo}
           alt="Logo"
         />
-        <div className="mainimage absolute top-0 right-0 w-full md:w-1/2">
+        <div className="mainimage absolute top-0 right-0 w-full md:w-1/2 lg:w-1/2">
           <img
-            className="landing sm:w-[752px] sm:h-[839px] mobilesm:w-[375px] mobilesm:h-[426px] mobile:w-[426px] mobile:h-[482px] absolute -top-1 z-10 object-cover"
+            className="landing xl:w-[752px] xl:h-[839px] md:h-[600px] lg:w-[652px] lg:h-[690px]  mobilesm:w-[375px] mobilesm:h-[426px] mobile:w-[426px] mobile:h-[482px] absolute -top-1 z-10 object-cover"
             src={vector}
             alt="Vector Image"
           />
           <img
-            className="landingimage absolute sm:h-[804px] sm:w-[735px] mobilesm:w-[378.21px] mobilesm:h-[413.72px] mobile:w-[438.21px] mobile:h-[448.21px] z-100 top-0  rounded-bl-[198.9px] object-cover "
+            className="landingimage absolute xl:h-[804px] xl:w-[735px] md:h-[580px] lg:h-[664px] lg:w-[735px]  mobilesm:w-[378.21px] mobilesm:h-[413.72px] mobile:w-[438.21px] mobile:h-[448.21px] z-100 top-0  rounded-bl-[198.9px] object-cover "
             src={landingimage}
           />
         </div>
-        <div className="w-full md:w-96 mt-8 md:mt-16 md:ml-6 relative sm:static top-72">
-          <h1 className="text-[#0E2368] font-source-sans text-4xl md:text-5xl lg:text-6xl font-bold leading-10 md:leading-12 tracking-wide text-left">
+        <div className="w-full md:w-72 lg:w-96 mt-8 md:mt-16 md:ml-6 relative sm:static top-72">
+          <h1 className="text-[#0E2368] font-source-sans text-4xl md:text-5xl lg:text-6xl font-bold leading-10 lg:leading-12 tracking-wide text-left">
             Discover the <span className="text-[#E23744]">Best</span> Food and
             Drinks
           </h1>
-          <p className="text-[#444957] mt-4 md:mt-6">
+          <p className="text-[#444957] mt-4 lg:mt-6">
             Naturally made Healthcare Products for the better care & support of
             your body.
           </p>
@@ -109,12 +109,12 @@ export default function App() {
           </button>
         </div>
 
-        <button className="getInTouchBtn sm:w-36 text-sm  sm:h-12 w-24  h-[31px] border-white border-2 absolute z-10 sm:top-8 top-4 right-6 sm:right-12 bg-transparent text-white sm:py-2 sm:px-4 rounded-full cursor-pointer hover:bg-white hover:text-black  transition duration-300 ease-in-out">
+        <button className="getInTouchBtn md:w-28 md:h-10 lg:w-36 lg:h-12 w-24  h-[31px] text-sm border-white border-2 absolute z-10 sm:top-8 top-4 md:right-4 lg:right-6 sm:right-12 bg-transparent text-white sm:py-2 sm:px-4 rounded-full cursor-pointer hover:bg-white hover:text-black  transition duration-300 ease-in-out">
           Get in Touch
         </button>
       </header>
       {/* About Us Section */}
-      <section className="relative w-full sm:h-auto  h-[516px] top-44 bg-gradient-to-r from-[rgba(30,42,93,0.04)] via-[rgba(48,62,130,0.04)] to-[rgba(60,80,157,0.04)] flex items-center justify-center">
+      <section className="relative w-full sm:h-auto lg:top-16  h-[516px] xl:top-48 mobile:top-48 bg-gradient-to-r from-[rgba(30,42,93,0.04)] via-[rgba(48,62,130,0.04)] to-[rgba(60,80,157,0.04)] flex items-center justify-center">
         <div className="container mx-auto sm:w-full w-[275px] flex flex-col sm:flex-row  sm:justify-around">
           <img
             className="section1image w-full sm:w-[384px] sm:h-[468px] object-cover rounded-md sm:block hidden"
@@ -122,10 +122,10 @@ export default function App() {
             alt="Section 1 Image"
           />
           <div className="aboutUS w-[275px] sm:w-[447px] h-[254px] flex flex-col gap-[21px] sm:p-8 relative top-8">
-            <h2 className="text-[#0E2368] text-3xl md:text-4xl lg:text-5xl font-bold leading-10 md:leading-12 mb-4">
+            <h2 className="text-[#0E2368] text-3xl md:text-4xl lg:text-5xl font-bold leading-10 lg:leading-12 mb-4">
               About Us
             </h2>
-            <p className="text-[#444957] mb-6 text-center sm:text-justify w-[275px] h-[138px] sm:w-[350px] sm:h-[191.41px]">
+            <p className="text-[#444957] mb-6 text-center sm:text-justify mobile:w-[275px] mobile:h-[138px] xl:w-[350px] xl:h-[191.41px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -139,13 +139,13 @@ export default function App() {
       </section>
 
       {/* Latest Articles Section */}
-      <section className="relative w-full h-auto top-72 flex flex-col items-center justify-center">
+      <section className="relative w-full h-auto xl:top-72 mobile:top-72 lg:top-60 md:top-28 flex flex-col items-center justify-center lg:p-6">
         <div className="container mx-auto mb-12">
-          <h2 className="text-[#0E2368] text-5xl font-source font-semibold leading-10 tracking-wide sm:text-left text-center">
+          <h2 className="text-[#0E2368] text-5xl  font-source font-semibold leading-10 tracking-wide xl:text-left mobile:text-center md:text-center">
             Latest Articles
           </h2>
         </div>
-        <div className="container mx-auto flex flex-col md:flex-row justify-around gap-6 md:gap-8 lg:gap-12 relative">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-around gap-6  relative">
           {visibleArticles.map((article) => (
             <Card
               key={article.id}
@@ -154,7 +154,7 @@ export default function App() {
               info={article.info}
             />
           ))}
-          <div className="slider-controls absolute sm:top-[39rem] top-[109rem] mobile:top-[108rem] mobilesm:top-[110rem] mobilexs:top-[113rem] sm:left-auto mobilesm:left-32 mobile:left-36  mobilexs:left-24 transform -translate-y-1/2 flex items-center space-x-4">
+          <div className="slider-controls absolute  xl:top-[39rem] lg:top-[39rem] md:top-[98rem] md:left-80 lg:left-auto top-[109rem] mobile:top-[108rem] mobilesm:top-[110rem] mobilexs:top-[113rem] sm:left-auto mobilesm:left-32 mobile:left-36  mobilexs:left-24 transform -translate-y-1/2 flex items-center space-x-4">
             <button
               className={`border-2 text-lg text-[#424961] p-1 rounded-md ${
                 currentPage === 1 ? "opacity-50" : "opacity-100"
