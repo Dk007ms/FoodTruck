@@ -84,12 +84,12 @@ export default function App() {
         />
         <div className="mainimage absolute top-0 right-0 w-full md:w-1/2">
           <img
-            className="landing sm:w-[752px] sm:h-[839px] w-[378.21px] h-[413.72px] absolute top-0 z-10 object-cover"
+            className="landing sm:w-[752px] sm:h-[839px] w-[375px] h-[426px] absolute top-0 z-10 object-cover"
             src={vector}
             alt="Vector Image"
           />
           <img
-            className="landingimage absolute sm:h-[804px] sm:w-[735px] w-[375px] h-[426px] object-cover z-100  rounded-bl-[198.9px] "
+            className="landingimage absolute sm:h-[804px] sm:w-[735px] w-[378.21px] h-[413.72px] object-cover z-100  rounded-bl-[198.9px] "
             src={landingimage}
           />
         </div>
